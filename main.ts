@@ -23,6 +23,8 @@ radio.onReceivedValue(function (name, value) {
         waitingRemoteTemp = 0
         basic.pause(500)
         basic.showNumber(value)
+        basic.pause(1000)
+        basic.clearScreen()
     }
 })
 let waitingRemoteTemp = 0
